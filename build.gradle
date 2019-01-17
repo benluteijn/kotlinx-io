@@ -7,7 +7,9 @@ buildscript {
         maven { url 'https://dl.bintray.com/kotlin/kotlin-dev' }
         maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
         maven { url "https://dl.bintray.com/jetbrains/kotlin-native-dependencies" }
+        maven { url "https://dl.bintray.com/touchlabpublic/kotlin" }
         maven { url 'https://plugins.gradle.org/m2/' }
+        maven { url 'https://dl.bintray.com/qwwdfsad/kotlinx/' }
         jcenter()
     }
     dependencies {
@@ -15,7 +17,8 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-frontend-plugin:0.0.37"
         classpath group: 'net.rubygrapefruit', name: 'native-platform', version: '0.10'
-        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:$bintray_plugin_version"
+//        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:$bintray_plugin_version"
+        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.3-kotlin-a1"
         classpath "org.jetbrains.kotlinx:atomicfu-gradle-plugin:$atomic_fu_version"
         classpath "com.moowork.gradle:gradle-node-plugin:$gradle_node_version"
     }
@@ -38,6 +41,7 @@ allprojects {
         maven { url 'https://kotlin.bintray.com/kotlinx' }
         maven { url 'http://dl.bintray.com/kotlin/kotlin-eap' }
         maven { url 'http://dl.bintray.com/kotlin/kotlin-dev' }
+        maven { url 'https://dl.bintray.com/qwwdfsad/kotlinx/' }
         jcenter()
     }
 
